@@ -1,12 +1,9 @@
 html,
-body{
+body {
   height: 100%;
 }
 
-
-
-
-.body{
+.body {
   color: $default;
   font-size: 16px;
   line-height: 26px;
@@ -15,72 +12,71 @@ body{
   @extend %quicksand-500;
 }
 
-
-.main{
+.main {
   flex-grow: 1;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-
-
-
-a{
+a {
   color: $default;
   font-size: 16px;
   line-height: 26px;
   @extend %quicksand-500;
 }
 
-.breadcrumbs{
+.breadcrumbs {
   display: inline-flex;
   justify-content: center;
   padding-left: 25px;
   position: relative;
-  &::before{
+  &::before {
     content: "";
     position: absolute;
-    background-image: url('../images/icons/home-icon.png');
+    background-image: url("../images/icons/home-icon.png");
     width: 16px;
     height: 16px;
     left: 0;
     top: 4px;
   }
 
-  &__list{
+  &__list {
     display: flex;
   }
 
-  &__item{
+  &__item {
     color: #727272;
     padding-right: 40px;
     position: relative;
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
-      background-image: url('../images/icons/angle-right.png');
+      background-image: url("../images/icons/angle-right.png");
       width: 9px;
       height: 10px;
       right: 15px;
       top: 9px;
     }
-    &:last-child{
+    &:last-child {
       color: $accent;
       padding-right: 0;
-      &::after{
+      &::after {
         display: none;
       }
     }
   }
 
-  &__link{
+  &__link {
     color: inherit;
   }
+}
 
 
+.header--404-page{
+  background-color: $bg;
 }
