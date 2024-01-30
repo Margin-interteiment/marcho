@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/login.min.css"/>
   </head>
   <body>
-    <header class="header">
+     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="logo" href="#">
@@ -72,112 +72,79 @@
       </div>
     </header>
 
-  <main class="main">
-  
+    <main class="main">
 
-  <section class="top">
-    <div class="top__container" style="background-image: url('images/top-bg.jpg');">
-      <div class="container">
+       <section class="top">
+        <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+          <div class="container">
 
-
-
-        <h2 class="top__title title">
+            <h2 class="top__title title">
           LOG IN
         </h2>
 
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
 
-        <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-
-
-          
-          <li class="breadcrumbs__item">
-            <a  class="breadcrumbs__link" href="#">
+                <li class="breadcrumbs__item">
+                  <a  class="breadcrumbs__link" href="#">
               Home
             </a>
-          </li>
+                </li>
 
-
-          <li class="breadcrumbs__item">
-            <span  class="breadcrumbs__link" href="#">
+                <li class="breadcrumbs__item">
+                  <span  class="breadcrumbs__link" href="#">
               Log in
             </span>
-          </li>
+                </li>
 
+              </ul>
+            </div>
 
-
-
-        </ul>
+          </div>
         </div>
+      </section>
+     
+      <section class="modal">
+        <div class="container">
+          <div class="modals__links">
+            <a  class="modal__link" href="#">REGISTER</a>
+            <a  class="modal__link  modal__link--active" href="#">LOGIN</a>
 
+          </div>
 
-
-      </div>
-    </div>
-  </section>
-
-
-  <section class="modal">
-    <div class="container">
-      <div class="modals__links">
-         <a  class="modal__link" href="#">REGISTER</a>
-         <a  class="modal__link  modal__link--active" href="#">LOGIN</a>
-
-      </div>
-
-     <form  class="modal__form"  action="#">
-      <label class="modal__label">
+          <form  class="modal__form"  action="#">
+            <label class="modal__label">
         Username or email address*
         <input class="modal__input"   type="text" required>
-      </label>
+            </label>
 
-
-
-      <label class="modal__label">
+            <label class="modal__label">
         Password*
         <input class="modal__input"   type="password" required>
-      </label>
+            </label>
 
+            <label class="modal__label">
 
-      <label class="modal__label">
-
-        <input type="checkbox">
+              <input type="checkbox">
         Remember me
-      </label>
+         </label>
 
-     <button class="modal__btn"   type="submit">
-      LOG IN
-     </button>
-    
-     <a class="modal__error" href="#">Lost your password?</a>
+            <button class="modal__btn"   type="submit">
+             LOG IN
+           </button>
 
-     </form>
+            <a class="modal__error" href="#">Lost your password?</a>
 
+          </form>
 
-    </div>
-  </section>
+        </div>
+      </section>
 
+     
 
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </main>
-
-
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-top__item">
@@ -337,8 +304,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
-
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>
